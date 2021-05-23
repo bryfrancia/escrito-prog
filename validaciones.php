@@ -44,4 +44,41 @@
                
             }
             
-           
+            validacionEdadTelefono();
+               
+
+        function validacionEdadTelefono() {
+
+            if (!is_numeric($_POST['edad'] )) {
+                echo "Ingrese valores númericos en Edad" . "<br>";                                 
+        }
+        if (!is_numeric($_POST['telefono'])) {
+            echo "Ingrese valores númericos en Teléfono" . "<br>";                                 
+    }
+    }
+
+   
+
+    validacionEmail();
+               
+
+    function validacionEmail() {
+
+        if (!strpos($_POST['email'], "@" )) {
+            echo "Ingrese su email correctamente " . "<br>" . "Ejemplo pepito@gmail.com";                                 
+    }
+                               
+}
+    
+    
+
+
+
+    
+               
+
+
+
+
+
+        
