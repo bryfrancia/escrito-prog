@@ -13,6 +13,16 @@ function insertar ($nombre,$apellido,$telefono,$fechaNacimiento,$edad,$email){
 
 }
 
+insertar (
+$_POST['nombre'],
+$_POST['apellido'],
+$_POST['telefono'],
+$_POST['fechaNacimiento'],
+$_POST['edad'],
+$_POST['email']
+);
+
+echo ("Los datos se ingresaron correctamente");
 
 
 
